@@ -1,0 +1,54 @@
+.imageCard {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.imageCard__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.imageCard img {
+    width: 100%;
+}
+
+.imageCard__overlay {
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.imageCard__overlay p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0 10px;
+}
+
+.tags {
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.tag {
+    display: inline;
+}
+
+@media (max-width: 950px) {
+    .imageCard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 650px) {
+    .imageCard {
+        width: 70%;
+    }
+}

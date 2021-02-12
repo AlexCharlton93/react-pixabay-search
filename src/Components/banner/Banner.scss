@@ -1,0 +1,81 @@
+.banner {
+    height: 400px;
+    background: url("https://cdn.pixabay.com/index/2020/08/31/12-48-41-329_1440x480.jpg");
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    background-color: #555;
+    margin: 0 0 20px;
+    text-align: center;
+    transition: .8s;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+.banner__mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+}
+
+.banner__overlay {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+}
+
+.banner__overlay h2 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.banner__input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw; /* Always use 75% of screen width */
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+    background: #fff;
+}
+
+.banner__input > input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+}
+
+.banner__input > input:focus {
+    outline: none;
+}
+
+.banner__inputIcon {
+    color: gray;
+}
+
+.icon-grey {
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .banner__overlay {
+        width: 90vw;
+    }
+
+    .banner__overlay h1 {
+        font-size: 20px;
+    }
+}

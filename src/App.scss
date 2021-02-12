@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+.noImages {
+  text-align: center;
+}
+
+.btn-primary {
+  background: #02be6e !important;
+  color: white !important;
+  text-transform: none !important;
+  border-radius: 999px !important;
+  border: none !important;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.b-600 {
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 20px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding: 0 40px;
+  text-align: center;
+}
